@@ -5,7 +5,11 @@ import { useDropzone } from 'react-dropzone'
 
 const FileUpload = () => {
         const {getRootProps, getInputProps} = useDropzone({
-            a
+            accept: { "application/pdf": [".pdf"] },
+            maxFiles:1,
+            onDrop: (acceptedFiles) => {
+                console.log(acceptedFiles);
+            }
         });
     return (
         <div className='p-2 bg-white rounded-xl'>
