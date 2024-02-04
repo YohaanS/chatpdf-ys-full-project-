@@ -3,7 +3,7 @@ import { UserButton, auth } from "@clerk/nextjs";
 import Link from "next/link";
 import {LogIn} from 'lucide-react'
 import Image from 'next/image'
-import FileUpload from "@/components/ui/FileUpload";
+import FileUpload from "@/components/FileUpload";
 
 export default function Home() {
   const { userId } = auth();
